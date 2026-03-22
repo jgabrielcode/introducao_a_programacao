@@ -41,8 +41,8 @@ int main(){
 
     //Processamento dos dados Carta 1
 
-    double densidadePopulacionalCarta1 = populacaoCarta1 / areaCarta1;
-    double PIBperCapitaCarta1 = PIBCarta1 / populacaoCarta1;
+    double densidadePopulacionalCarta1 = (double)populacaoCarta1 / areaCarta1;
+    double PIBperCapitaCarta1 = (double)PIBCarta1 / populacaoCarta1;
     float superPoderCarta1 = populacaoCarta1 + areaCarta1 + PIBCarta1 + pontosTuristicosCarta1 + PIBperCapitaCarta1 + densidadePopulacionalCarta1;
 
     //Entrada de dados Carta 2 
@@ -74,8 +74,8 @@ int main(){
 
     //Processamento dos dados Carta 2
 
-    double densidadePopulacionalCarta2 = populacaoCarta2 / areaCarta2;
-    double PIBperCapitaCarta2 = PIBCarta2 / populacaoCarta2;
+    double densidadePopulacionalCarta2 = (double)populacaoCarta2 / areaCarta2;
+    double PIBperCapitaCarta2 = (double)PIBCarta2 / populacaoCarta2;
     float superPoderCarta2 = populacaoCarta2 + areaCarta2 + PIBCarta2 + pontosTuristicosCarta2 + PIBperCapitaCarta2 + densidadePopulacionalCarta2;
 
     //Saida dos dados carta 1
