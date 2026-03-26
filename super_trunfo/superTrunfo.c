@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
@@ -25,6 +26,7 @@ int main(){
 
     printf("Digite o nome da cidade: ");
     fgets(cidadeCarta1,50, stdin);
+    cidadeCarta1[strcspn(cidadeCarta1, "\n")] = '\0';
 
     printf("Digite a populacao: ");
     scanf(" %u", &populacaoCarta1);
@@ -117,7 +119,13 @@ int main(){
 
     printf("Comparacao de cartas:\n");
     printf("1 - Carta 1 venceu , 0 - Carta 2 venceu\n");
-    printf("Populacao: (%d)\n", populacaoCarta1 > populacaoCarta2);
+
+    if(populacaoCarta1 > populacaoCarta2){
+        printf("Carta 1 (%s) venceu!\n", cidadeCarta1);
+    }else{
+        printf("Carta 2 (%s) venceu", cidadeCarta2);
+    }
+
     printf("Area: (%d)\n", areaCarta1 > areaCarta2);
     printf("PIB: (%d)\n", PIBCarta1 > PIBCarta2);
     printf("Pontos Turisticos: (%d)\n", pontosTuristicosCarta1 > pontosTuristicosCarta2);
