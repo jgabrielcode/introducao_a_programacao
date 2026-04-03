@@ -4,9 +4,9 @@ int main (){
     int pecas;
 
     printf("Lista de peças\n");
-    printf("1-Torre\n");
-    printf("2-Bispo\n");
-    printf("3-Rainha\n");
+    printf("1-Torre (5 casas na diagonal para cima e direita)\n");
+    printf("2-Bispo (5 casas para a direita)\n");
+    printf("3-Rainha (8 casas para a esquerda) \n");
     printf("Selecione a peça que quer movimentar: ");
     scanf(" %d", &pecas);
 
