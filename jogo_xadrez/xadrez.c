@@ -1,5 +1,31 @@
 #include <stdio.h>
 
+void movimentoTorre(int n){
+    if(n > 0){
+        printf("Cima \n");
+        movimentoTorre(n - 1);
+    }
+    
+    
+}
+
+void movimentoBispo(int n){
+    if(n > 0){
+        printf("Cima \n");
+        printf("Direita \n");
+       movimentoBispo(n - 1);
+    }
+}
+
+
+void movimentoRainha(int n){
+    if(n > 0){
+        printf("Esquerda \n");
+        movimentoRainha(n - 1);
+    }
+}
+
+
 int main (){
     int pecas;
     int i,j;
@@ -15,23 +41,22 @@ int main (){
     switch (pecas)
     {
     case 1:
-        for( i = 0; i <= 5; i++){
-        printf("Cima Direita ");
-        }
+        i = 5;
+        movimentoTorre(i);
         break;
     case 2:
-        for(i = 0; i <= 5; i++){
-            
-        printf("Direita");
-        
-
-    }
+        // i = 5;
+        // movimentoBispo(i);
+        for(i = 0; i < 5; i++){
+            printf("Cima\n");
+            for(j = 0; j < 1; j++){
+                printf("Direita\n");
+            }
+        }
     break;
     case 3:
-        for( i = 0; i <= 8; i++){
-        printf("Esquerda\n");
-
-    }
+        i = 8;
+        movimentoRainha(i);
     break;
     case 4:
         i = 0;
