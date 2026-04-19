@@ -50,7 +50,7 @@ int main (){
         for(i = 0; i < 5; i++){
             printf("Cima\n");
             for(j = 0; j < 1; j++){
-                printf("Direita\n");
+                printf("Direita\n");    
             }
         }
     break;
